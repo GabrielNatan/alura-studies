@@ -1,6 +1,8 @@
+import './button.scss';
+
 export const Button = ()=>{
     return(
-        <button >
+        <button className='botao'>
             Button
         </button>
     )

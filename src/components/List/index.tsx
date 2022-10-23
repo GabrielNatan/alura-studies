@@ -1,3 +1,5 @@
+import './list.scss';
+
 export const List = () => {
     const tarefa = [
         { 
@@ -9,13 +11,13 @@ export const List = () => {
             tempo: '02:00:00'
         }]
     return (
-        <aside>
+        <aside className='listaTarefas'>
             <h2>Estudos do dia</h2>
             <ul>
               {
                 tarefa.map(item=>{
                     return(
-                        <li key={`${item.tarefa}-${item.tempo}`}>
+                        <li className='item' key={`${item.tarefa}-${item.tempo}`}>
                             <h3>{item.tarefa}</h3>
                             <span>{item.tempo}</span>
                         </li>
