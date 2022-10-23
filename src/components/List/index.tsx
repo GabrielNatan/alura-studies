@@ -17,7 +17,8 @@ export const List = () => {
               {
                 tarefa.map(item=>{
                     return(
-                        <li className='item' key={`${item.tarefa}-${item.tempo}`}>
+                        <li className='item{
+                            ' key={`${item.tarefa}-${item.tempo}`}>
                             <h3>{item.tarefa}</h3>
                             <span>{item.tempo}</span>
                         </li>
